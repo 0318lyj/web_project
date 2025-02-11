@@ -13,12 +13,26 @@ header {
 }
 
 #top-menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 20px; 
-  height: 60px; /* 메뉴바 높이 */
+  display: flex;                 /* 수평 레이아웃 */
+  align-items: center;           /* 수직 정렬 중앙 */
+  justify-content: space-between;/* 양쪽 끝 정렬 (로고 왼쪽, 메뉴 오른쪽) */
+  padding: 0 20px;
+  height: 60px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+
+#logo-area {
+  display: flex;
+  align-items: center; /* 로고 이미지 세로 가운데 정렬 */
+}
+
+/* 실제 로고 이미지 크기 조절 */
+#logo-image {
+  width: 50px; /* 원하는 크기 */
+  height: auto;
+}
+
 
 #top-menu ul {
   list-style-type: none;
