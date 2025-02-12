@@ -1,0 +1,67 @@
+/* post_detail.css */
+
+/* 게시물 상세 섹션 */
+.post_detail {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* 게시물 상세 컨텐츠 박스 */
+.post_detail_box {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+/* 게시물 제목 */
+.post_detail_title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+/* 게시물 작성일 */
+.post_detail_date {
+  font-size: 14px;
+  color: #a5a5a5;
+  margin-bottom: 30px;
+}
+
+/* 게시물 내용 */
+.post_detail_content {
+  font-size: 16px;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+/* 좋아요/싫어요 버튼 및 카운트 영역 */
+.vote_section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.vote_button {
+  background: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 200ms ease;
+}
+
+.vote_button:hover {
+  background: #ffb606;
+}
+
+.vote_count {
+  font-size: 16px;
+  color: #1a1a1a;
+  margin-left: 8px;
+}

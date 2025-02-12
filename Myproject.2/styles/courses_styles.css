@@ -1,0 +1,47 @@
+/* courses.css */
+
+/* 게시물 목록 섹션 */
+.board_list {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* 섹션 제목 (필요시 메인 스타일과 조정) */
+.section_title h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+/* 게시물 카드 스타일 */
+.board_card {
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.board_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 카드 이미지 스타일 */
+.board_card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* 카드 버튼 스타일 */
+.board_btn {
+  background: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  transition: background 200ms ease;
+}
+
+.board_btn:hover {
+  background: #ffb606;
+  color: #ffffff;
+}

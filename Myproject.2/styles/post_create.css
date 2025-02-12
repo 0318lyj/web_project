@@ -1,0 +1,64 @@
+/* post_create.css */
+
+/* 게시물 등록 섹션 스타일 */
+.post_create_section {
+  background: #ffb606; /* 메인 색상과 일치 */
+  padding: 40px;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+.post_create_content {
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* 게시물 등록 타이틀 및 설명 */
+.post_create_title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.post_create_text {
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+/* 입력폼 스타일 (메인 CSS의 .input_field 재사용) */
+.input_field {
+  margin-bottom: 15px;
+}
+
+/* 게시물 내용 텍스트에어리어 넓이 조정 */
+#postContent {
+  width: 100% !important;  /* 부모 컨테이너의 전체 너비 사용 */
+  max-width: 100% !important;
+}
+
+/* 게시물 등록 버튼 스타일 */
+.btn.post_create_button {
+  width: 100%;
+  padding: 10px;
+  background: #1a1a1a;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 200ms ease;
+}
+
+.btn.post_create_button:hover {
+  background: #ffb606;
+}
+
+/* 성공 또는 에러 메시지 */
+#postCreateMessage {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
