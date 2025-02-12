@@ -2,110 +2,36 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>정치 토론 게시판 예시</title>
-  <!-- 외부 CSS 파일 연결 -->
-  <link rel="stylesheet" href="style.css" />
+  <title>토론 사이트 - 메인</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <h1>정치 토론 게시판 (예시)</h1>
-  
-  <!-- 로그인 / 회원가입 / 로그아웃 영역 -->
-  <div id="auth-section">
-    <div id="login-form">
-      <h2>로그인</h2>
-      <div>
-        <label>아이디:
-          <input type="text" id="login-username" />
-        </label>
+  <!-- 상단 메뉴 -->
+  <header>
+    <nav id="top-menu">
+      <ul>
+        <li><a href="#" id="link-login">로그인</a></li>
+        <li><a href="#" id="link-register">회원가입</a></li>
+        <li><a href="#" id="link-post-list">게시글 목록</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 메인 영역: 게시글 등록 -->
+  <main>
+    <section id="main-section">
+      <h1>토론 할 게시물을 등록하세요</h1>
+      <div id="post-creation" class="central-box">
+        <input type="text" id="post-title" placeholder="게시글 제목을 입력하세요" />
+        <textarea id="post-content" placeholder="게시글 내용을 입력하세요" rows="8" cols="60"></textarea>
+        <button id="create-post-button">등록</button>
       </div>
-      <div>
-        <label>비밀번호:
-          <input type="password" id="login-password" />
-        </label>
-      </div>
-      <button id="login-button">로그인</button>
-      <p class="error" id="login-error"></p>
-      <p>
-        아직 회원이 아니신가요?
-        <button id="show-register">회원가입 하기</button>
-      </p>
-    </div>
+      
 
-    <div id="register-form" class="hidden">
-      <h2>회원가입</h2>
-      <div>
-        <label>아이디:
-          <input type="text" id="register-username" />
-        </label>
-      </div>
-      <div>
-        <label>비밀번호:
-          <input type="password" id="register-password" />
-        </label>
-      </div>
-      <button id="register-button">회원가입 완료</button>
-      <p class="error" id="register-error"></p>
-      <p>
-        이미 회원이신가요?
-        <button id="show-login">로그인 하기</button>
-      </p>
-    </div>
+    </section>
+  </main>
 
-    <div id="logout-section" class="hidden">
-      <span id="welcome-msg"></span>
-      <button id="logout-button">로그아웃</button>
-    </div>
-  </div>
-  <hr />
-
-  <!-- 게시글 목록 & 등록 영역 -->
-  <div id="main-section" class="hidden">
-    <h2>게시글 목록</h2>
-    <div id="post-list"></div>
-
-    <h3>게시글 작성</h3>
-    <div>
-      <label>제목:
-        <input type="text" id="post-title" />
-      </label>
-    </div>
-    <div>
-      <label>내용:
-        <textarea id="post-content" rows="4" cols="50"></textarea>
-      </label>
-    </div>
-    <button id="create-post-button">등록</button>
-  </div>
-
-  <!-- 게시글 상세 & 댓글 영역 -->
-  <div id="post-detail-section" class="hidden">
-    <h2>게시글 상세</h2>
-    <h3 id="detail-title"></h3>
-    <p id="detail-content"></p>
-    <p>작성자: <span id="detail-author"></span></p>
-
-    <div>
-      <button id="like-post-button" class="like-dislike">좋아요(<span id="post-like-count"></span>)</button>
-      <button id="dislike-post-button" class="like-dislike">싫어요(<span id="post-dislike-count"></span>)</button>
-    </div>
-    <div class="vote-section">
-      <button id="vote-button">투표하기</button>
-      <span>투표 수: <span id="post-vote-count"></span></span>
-    </div>
-
-    <hr />
-    <h3>댓글</h3>
-    <div id="comment-list" class="comment-list"></div>
-    <div id="comment-form">
-      <textarea id="comment-content" rows="2" cols="50" placeholder="댓글을 입력하세요"></textarea><br/>
-      <button id="add-comment-button">댓글 등록</button>
-    </div>
-
-    <br/>
-    <button id="back-to-main">목록으로 돌아가기</button>
-  </div>
-
-  <!-- 외부 JS 파일 연결 -->
+  <!-- 동작 JS -->
   <script src="app.js"></script>
 </body>
 </html>

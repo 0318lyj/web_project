@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>토론 사이트 - 게시글 상세보기</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- 상단 메뉴 -->
+  <header>
+    <nav id="top-menu">
+      <ul>
+        <li><a href="#" id="link-login">로그인</a></li>
+        <li><a href="#" id="link-register">회원가입</a></li>
+        <li><a href="#" id="link-post-list">게시글 목록</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 게시글 상세보기 및 댓글 영역 -->
+  <main>
+    <section id="postdetail-section">
+      <!-- 게시글 상세 내용 출력 -->
+      <div id="post-detail" class="central-box">
+        <!-- 자바스크립트로 게시글 상세 내용이 표시됩니다 -->
+      </div>
+      <!-- 댓글(토론) 영역 -->
+      <section id="comments-section">
+        <h2>댓글 (토론)</h2>
+        <div id="comment-section" class="central-box">
+          <!-- 자바스크립트로 댓글 목록이 표시됩니다 -->
+        </div>
+        <div class="central-box">
+          <textarea id="comment-content" placeholder="댓글을 입력하세요" rows="4" cols="50"></textarea>
+          <button id="add-comment-button">댓글 등록</button>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- 게시글 상세보기 동작을 위한 JS -->
+  <script src="postdetail.js"></script>
+</body>
+</html>
